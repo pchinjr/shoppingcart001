@@ -1,0 +1,13 @@
+hi from my kewl webpage
+
+<form action=/cart method=post>
+  <input type=hidden name=productID value=xxx1>
+  <button>add to cart</button>
+</form>
+
+<script>
+  (async function() {
+    let result = await fetch('/cart')
+    console.log(await result.json())
+  })();
+</script>
